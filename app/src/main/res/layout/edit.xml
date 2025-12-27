@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#FFF8E7">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <!-- الصورة -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitCenter"
+        android:contentDescription="Selected Image"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.5"/>
+
+
+    <!-- النص العلوي -->
+    <EditText
+        android:id="@+id/topText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="أدخل النص العلوي"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <!-- أزرار تكبير وتصغير النص العلوي -->
+    <Button
+        android:id="@+id/btnDecreaseTop"
+        android:layout_width="44dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="6dp"
+        android:backgroundTint="#FF0000"
+        android:text="-"
+        android:textColor="#FF0000"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/topText" />
+
+    <Button
+        android:id="@+id/btnIncreaseTop"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:text="تكبير"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:backgroundTint="#000000"
+        app:layout_constraintTop_toBottomOf="@id/topText"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="6dp"/>
+
+    <!-- النص السفلي -->
+    <EditText
+        android:id="@+id/bottomText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="أدخل النص السفلي"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@id/btnDecreaseTop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <!-- أزرار تكبير وتصغير النص السفلي -->
+    <Button
+        android:id="@+id/btnDecreaseBottom"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:text="-"
+        android:textColor="#FF0000"
+        android:textSize="22sp"
+        android:backgroundTint="#FF0000"
+        app:layout_constraintTop_toBottomOf="@id/bottomText"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="6dp"/>
+
+    <Button
+        android:id="@+id/btnIncreaseBottom"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:text="+"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:backgroundTint="#000000"
+        app:layout_constraintTop_toBottomOf="@id/bottomText"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="6dp"/>
+
+    <!-- زر تطبيق النص -->
+    <Button
+        android:id="@+id/btnApply"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="تطبيق النص"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#4CAF50"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@id/btnDecreaseBottom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp"/>
+
+    <!-- زر حفظ -->
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="حفظ في المعرض"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#2196F3"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@id/btnApply"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="6dp"/>
+
+    <!-- زر مشاركة -->
+    <Button
+        android:id="@+id/btnShare"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="مشاركة"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FF5722"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@id/btnSave"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="6dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

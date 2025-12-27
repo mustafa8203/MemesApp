@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gridTemplates"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="2"
+    android:rowCount="2"
+    android:padding="16dp"
+    android:orientation="horizontal"
+    android:alignmentMode="alignMargins"
+    android:useDefaultMargins="true">
+
+    <ImageView
+        android:id="@+id/template1"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_columnWeight="1"
+        android:src="@drawable/tepm1"
+        android:contentDescription="Template 1" />
+
+    <ImageView
+        android:id="@+id/template2"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_columnWeight="1"
+        android:src="@drawable/tepm2"
+        android:contentDescription="Template 2" />
+
+    <!-- أضف المزيد من القوالب بنفس الطريقة -->
+    <ImageView
+        android:id="@+id/template3"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_columnWeight="1"
+        android:src="@drawable/tepm3"
+        android:contentDescription="Template 3" />
+
+    <ImageView
+        android:id="@+id/template4"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_columnWeight="1"
+        android:src="@drawable/tepm4"
+        android:contentDescription="Template 3" />
+
+
+    <ImageView
+        android:id="@+id/template5"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_columnWeight="1"
+        android:src="@drawable/tepm5"
+        android:contentDescription="Template 3" />
+
+
+    <ImageView
+        android:id="@+id/template6"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_columnWeight="1"
+        android:src="@drawable/tepm6"
+        android:contentDescription="Template 3" />
+
+    <ImageView
+        android:id="@+id/template7"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_columnWeight="1"
+        android:src="@drawable/tepm7"
+        android:contentDescription="Template 3" />
+
+
+    <ImageView
+        android:id="@+id/template8"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_columnWeight="1"
+        android:src="@drawable/tepm8"
+        android:contentDescription="Template 3" />
+
+
+    <ImageView
+        android:id="@+id/template9"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_columnWeight="1"
+        android:src="@drawable/tepm9"
+        android:contentDescription="Template 3" />
+
+</GridLayout>
+</ScrollView>
