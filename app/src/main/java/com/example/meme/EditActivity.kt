@@ -43,7 +43,7 @@ class EditActivity : AppCompatActivity() {
         topEditText = findViewById(R.id.topText)
         bottomEditText = findViewById(R.id.bottomText)
 
-        // باقي الأزرار كما لديك
+        // باقي الأزرار
         val btnApply = findViewById<Button>(R.id.btnApply)
         val btnSave = findViewById<Button>(R.id.btnSave)
         val btnShare = findViewById<Button>(R.id.btnShare)
@@ -70,7 +70,7 @@ class EditActivity : AppCompatActivity() {
             }
         }
 
-        // باقي الكود كما هو: تطبيق النص، تكبير وتصغير، حفظ ومشاركة
+        //     تطبيق النص، تكبير وتصغير، حفظ ومشاركة
         btnApply.setOnClickListener { applyTextToImage() }
 
         // تكبير وتصغير النصوص

@@ -31,7 +31,6 @@
         android:src="@drawable/tepm2"
         android:contentDescription="Template 2" />
 
-    <!-- أضف المزيد من القوالب بنفس الطريقة -->
     <ImageView
         android:id="@+id/template3"
         android:layout_width="0dp"
