@@ -1,1 +1,10 @@
 
+##لقسم الذي عملت عليه في المشروع
+قمت بالعمل على شاشة عرض القوالب في تطبيق Meme Generator، وتشمل:
+
+تطوير TemplateActivity
+عرض القوالب باستخدام GridLayout داخل ScrollView.
+ربط كل قالب بحدث الضغط للانتقال إلى شاشة التعديل.
+تمرير القالب المختار إلى EditActivity.
+المساهمة في تنفيذ TemplateAdapter لعرض الصور داخل RecyclerView وتنظيم اختيار القوالب.
+تصميم واجهة activity_template.xml.
